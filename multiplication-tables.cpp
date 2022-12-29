@@ -39,9 +39,9 @@ int main() {
         cout << "Enter the number to end the table at: ";
         cin >> endNum;
 
+        cout << "* Reduce the number of tables per row if the output is not displayed correctly." << endl;
         cout << "Enter maximum number of multiplication tables per row: ";
         cin >> tablesPerRow;
-        cout << "* Reduce the number of tables per row if the output is not displayed correctly." << endl;
 
         // Check if start number is less than or equal to end number
         if (startNum <= endNum) {
