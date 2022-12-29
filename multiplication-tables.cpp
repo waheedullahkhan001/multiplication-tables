@@ -4,10 +4,13 @@ using namespace std;
 
 // Function to generate and print multiplication tables
 void printMultiplicationTables(int startNum, int endNum, int tablesPerRow) {
+
     // Loop through start number to end number, incrementing by tablesPerRow each iteration
     for (int num = startNum; num <= endNum; num += tablesPerRow) {
+
         // Loop through 1 to 10 for each multiple
         for (int multiple = 1; multiple <= 10; multiple++) {
+
             // Loop through the tablesPerRow and print each table
             for (int tableNum = 0; tableNum < tablesPerRow; tableNum++) {
                 // Break if num + tableNum is greater than endNum
@@ -17,15 +20,17 @@ void printMultiplicationTables(int startNum, int endNum, int tablesPerRow) {
                 cout << num + tableNum << " x " << multiple << " = " << (num + tableNum) * multiple << "\t";
             }
             cout << endl;
+
         }
         cout << endl;
+
     }
+
 }
 
 int main() {
     // Declare variables to hold start, end, and tablesPerRow
-    int startNum = 0, endNum = -1;
-    int tablesPerRow = 0;
+    int startNum, endNum, tablesPerRow;
     char choice;
 
     cout << " ~> This program will print a multiplication table from a given start number to a given end number." << endl << endl;
