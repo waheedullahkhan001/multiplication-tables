@@ -33,7 +33,7 @@ int main() {
     int startNum, endNum, tablesPerRow;
     char choice;
 
-    cout << " ~> This program will print a multiplication table from a given start number to a given end number." << endl << endl;
+    cout << " ~> This program will print multiplication table from a given start number to a given end number." << endl << endl;
 
     // Loop until user chooses to exit
     while (true) {
